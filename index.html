@@ -47,58 +47,52 @@
     }
 
     /* HERO */
-
     .hero {
-  background: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-    url('img/hero-tattoo.jpg') no-repeat center center;
-  background-size: cover;
-  text-align: center;
-  padding: 110px 20px;
-  color: var(--white);
-}
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/hero-tattoo.jpg') no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      padding: 120px 20px;
+      color: var(--white);
+    }
 
     .hero .micro {
       text-transform: uppercase;
       letter-spacing: 2px;
-      font-size: 0.75rem;
+      font-size: 0.8rem;
       color: var(--gray);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .hero h1 {
-      font-size: clamp(2.2rem, 5vw, 3rem);
+      font-size: clamp(2.4rem, 5vw, 3.2rem);
       font-weight: 800;
       margin-bottom: 20px;
     }
 
-    .hero-img {
-  width: 80%;
-  max-width: 600px;
-  border-radius: 12px;
-  margin: 24px auto;
-  display: block;
-}
-    
     .highlight {
       color: var(--accent);
     }
 
     .subtitle {
-      max-width: 620px;
+      max-width: 650px;
       margin: 0 auto 36px;
-      color: #cfcfcf;
-      font-size: 1.05rem;
+      color: #dcdcdc;
+      font-size: 1.1rem;
     }
 
-    /* CTA */
     .cta {
       display: inline-block;
-      padding: 16px 36px;
+      padding: 16px 38px;
       background: var(--accent);
       color: var(--white);
       font-weight: 700;
       border-radius: 12px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .cta:hover {
+      transform: translateY(-3px);
+      background: #c62828;
     }
 
     .cta.secondary {
@@ -109,35 +103,52 @@
     /* SECTIONS */
     section {
       background: var(--dark);
+      padding: 60px 20px;
     }
 
     section h2 {
       text-align: center;
       font-size: 1.8rem;
       margin-bottom: 36px;
+      font-weight: 700;
     }
 
     /* STILI */
     .styles-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 24px;
     }
 
     .style-card {
       background: #111;
-      padding: 26px;
-      border-radius: 14px;
+      padding: 28px;
+      border-radius: 16px;
       text-align: center;
       font-weight: 600;
       border: 1px solid #222;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .style-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     }
 
     /* PORTFOLIO */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    .gallery img {
+      border-radius: 14px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
 
     /* INFO */
@@ -149,8 +160,9 @@
     }
 
     .info-list li {
-      padding: 12px 0;
-      color: #cfcfcf;
+      padding: 14px 0;
+      color: #dcdcdc;
+      font-size: 1rem;
     }
 
     /* CONTATTI */
@@ -161,7 +173,7 @@
     .actions {
       display: flex;
       justify-content: center;
-      gap: 18px;
+      gap: 20px;
       flex-wrap: wrap;
       margin-top: 24px;
     }
@@ -170,8 +182,8 @@
     footer {
       background: #000;
       text-align: center;
-      padding: 20px;
-      font-size: 0.8rem;
+      padding: 24px;
+      font-size: 0.85rem;
       color: var(--gray);
     }
 
@@ -193,20 +205,11 @@
 
   <!-- HERO -->
   <header class="hero">
-  <p class="micro">Tattoo Studio</p>
-  <h1>
-    Il tuo prossimo tatuaggio
-    <span class="highlight">inizia da qui</span>
-  </h1>
-  <p class="subtitle">
-    Stili personalizzati, linee pulite e attenzione ai dettagli.
-    Scopri i lavori e contattami direttamente.
-  </p>
-
-  <img src="img/hero-tattoo.jpg" alt="Esempio tatuaggio" class="hero-img">
-
-  <a href="#contatti" class="cta">Contattami ora</a>
-</header>
+    <p class="micro">Tattoo Studio</p>
+    <h1>Il tuo prossimo tatuaggio <span class="highlight">inizia da qui</span></h1>
+    <p class="subtitle">Stili personalizzati, linee pulite e attenzione ai dettagli. Scopri i lavori e contattami direttamente.</p>
+    <a href="#contatti" class="cta">Contattami ora</a>
+  </header>
 
   <!-- STILI -->
   <section>
