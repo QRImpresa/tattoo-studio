@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tattoo Studio · Vetrina Digitale</title>
+  <meta name="description" content="Portfolio tatuaggi, stili e contatti. Scansiona il QR e scopri il tattoo studio.">
+
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --dark: #161616;
+      --white: #ffffff;
+      --gray: #9a9a9a;
+      --accent: #e53935;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* HERO */
+    .hero {
+      background: radial-gradient(circle at top, #222, #000);
+      text-align: center;
+      padding: 110px 20px;
+    }
+
+    .hero .micro {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: var(--accent);
+    }
+
+    .subtitle {
+      max-width: 620px;
+      margin: 0 auto 36px;
+      color: #cfcfcf;
+      font-size: 1.05rem;
+    }
+
+    /* CTA */
+    .cta {
+      display: inline-block;
+      padding: 16px 36px;
+      background: var(--accent);
+      color: var(--white);
+      font-weight: 700;
+      border-radius: 12px;
+    }
+
+    .cta.secondary {
+      background: transparent;
+      border: 2px solid var(--accent);
+    }
+
+    /* SECTIONS */
+    section {
+      background: var(--dark);
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 36px;
+    }
+
+    /* STILI */
+    .styles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .style-card {
+      background: #111;
+      padding: 26px;
+      border-radius: 14px;
+      text-align: center;
+      font-weight: 600;
+      border: 1px solid #222;
+    }
+
+    /* PORTFOLIO */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    /* INFO */
+    .info-list {
+      list-style: none;
+      max-width: 520px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .info-list li {
+      padding: 12px 0;
+      color: #cfcfcf;
+    }
+
+    /* CONTATTI */
+    .contact {
+      text-align: center;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .hero {
+        padding: 90px 20px;
+      }
+
+      .cta {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="micro">Tattoo Studio</p>
+    <h1>
+      Il tuo prossimo tatuaggio
+      <span class="highlight">inizia da qui</span>
+    </h1>
+    <p class="subtitle">
+      Stili personalizzati, linee pulite e attenzione ai dettagli.
+      Scopri i lavori e contattami direttamente.
+    </p>
+    <a href="#contatti" class="cta">Contattami ora</a>
+  </header>
+
+  <!-- STILI -->
+  <section>
+    <div class="container">
+      <h2>Stili principali</h2>
+      <div class="styles-grid">
+        <div class="style-card">Blackwork</div>
+        <div class="style-card">Fine Line</div>
+        <div class="style-card">Realistico</div>
+        <div class="style-card">Old School</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section>
+    <div class="container">
+      <h2>Alcuni lavori</h2>
+      <div class="gallery">
+        <img src="img/tattoo1.jpg" alt="Tattoo blackwork">
+        <img src="img/tattoo2.jpg" alt="Tattoo realistico">
+        <img src="img/tattoo3.jpg" alt="Tattoo fine line">
+        <img src="img/tattoo4.jpg" alt="Tattoo old school">
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section>
+    <div class="container">
+      <h2>Informazioni</h2>
+      <ul class="info-list">
+        <li>📍 Studio privato</li>
+        <li>🕒 Solo su appuntamento</li>
+        <li>🧼 Materiali sterili e certificati</li>
+        <li>🎨 Disegni personalizzati</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <div class="container contact">
+      <h2>Contatti</h2>
+      <p>Scrivimi per idee, preventivi e appuntamenti.</p>
+      <div class="actions">
+        <a href="#" class="cta">WhatsApp</a>
+        <a href="#" class="cta secondary">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Vetrina digitale dimostrativa · QRImpresa
+  </footer>
+
+</body>
+</html>
